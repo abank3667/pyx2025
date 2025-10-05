@@ -15,6 +15,7 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-16x16.png">
 		<link rel="manifest" href="images/ico/site.webmanifest">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 
@@ -85,7 +86,10 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="https://getform.io/f/bnlnwdlb">
+								<form method="post" action="https://api.web3forms.com/submit">
+
+									<!-- Replace with your Access Key -->
+									<input type="hidden" name="access_key" value="44b495d4-ad76-44c3-a245-93f0ffa470de">								
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -99,8 +103,9 @@
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="4"></textarea>
 										</div>
-									</div>
-<input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+									</div>  
+                                    <!-- Custom Confirmation / Success Page -->
+                                    <input type="hidden" name="redirect" value="https://github.com">
 									
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
